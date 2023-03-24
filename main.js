@@ -2,7 +2,7 @@ function getPoke() {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=36")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         const results = data.results;
         for (let i = 0; i < results.length; i++) {
           const address = results[i].url;
