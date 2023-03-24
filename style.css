@@ -8,28 +8,45 @@
     color: #fff;
     font-family: 'lato';
   }
+
+  .bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
   h1 {
     color: black;
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
+    text-transform: uppercase;
   }
   button {
     margin: 20px auto 30px auto;
     display: block;
-    border-radius: 15px;
-    background-color: #f5df92;
-    border: 1px solid #e6d082;
+    border-radius: 50px;
+    background-color: #e6d082;
+    border: 16px solid #e6d082;
     cursor: pointer;
+    font-size: 20px;
   }
 
-  button:hover
-  
+  button:hover {
+    background-color: rgb(246,189,32);
+}
+
   #wrapper {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 30px;
+    column-gap: 30px;
     margin: auto;
     justify-content: space-between;
   }
@@ -42,8 +59,9 @@
     justify-content: space-between;
     padding: 10px 10px;
   }
-  h2 {
-    font-size: 20px;
+  h2, h3 {
+    font-size: 25px;
+    color: white;
   }
   .grass {
     background-color: #8dd694;
